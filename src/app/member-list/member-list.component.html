@@ -1,0 +1,11 @@
+<div class="w-full pt-10 pb-24 text-center bg-[#505AC9] text-white">
+  <h1 class="text-3xl font-bold">Membership Cards</h1>
+</div>
+<div class="flex items-center justify-center w-full px-8 mx-auto -mt-16 2xl:w-3/4 md:px-32 lg:px-16 2xl:px-0">
+  <div class="grid w-full grid-cols-1 gap-8 mb-10 xl:grid-cols-4">
+    @for(card of cards ; track card.id){
+
+      <app-member-card [card]="card"></app-member-card>
+    }
+  </div>
+</div>
